@@ -2,15 +2,15 @@ public class LineHelper {
 
   public static void main(String[] args) {
   	
-    Point one = new Point(2,2);
-    Point two = new Point(1,1);
-    Line a = new Line(one, two);
+    Point a = new Point(2,2);
+    Point b = new Point(1,1);
+    Line ab = new Line(a, b);
 
-    Point three = new Point(0,0); 
-    Point four = new Point(1,1);
-    Line b = new Line(three, four);
+    Point c = new Point(0,0); 
+    Point d = new Point(1,1);
+    Line cd = new Line(c, d);
 
-    if(a.equals(b)) {
+    if(ab.equals(cd)) {
       System.out.println("The two lines are equal");
     }
     else {
