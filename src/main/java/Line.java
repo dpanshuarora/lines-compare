@@ -7,9 +7,9 @@ public class Line {
     this.point2 = two;
   }
   
-  public boolean equals() {
-    Double lengthOfLine1 = calculateLength();
-    Double lengthOfLine2 = calculateLength();
+  public boolean equals(Line line) {
+    Double lengthOfLine1 = line.calculateLength();
+    Double lengthOfLine2 = this.calculateLength();
     
     return lengthOfLine1.equals(lengthOfLine2);
   }
@@ -23,6 +23,6 @@ public class Line {
   }
 
   private double calculateLength() {
-    return Math.sqrt(squareOfDifferenceX() - squareOfDifferenceY());
+    return Math.sqrt(squareOfDifferenceX() + squareOfDifferenceY());
   }
 }
